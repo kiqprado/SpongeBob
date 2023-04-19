@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/bikini-bottom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.game-board {
+  width: 100%;
+  min-height: 555px;
+
+  position: relative;
+  overflow: hidden;
+
+  margin: 0 auto;
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  animation: pipe-animation 2s infinite;
+}
+
+.bob {
+  position: absolute;
+  bottom: 0%;
+  width: 150px;
+  transform: rotateY(180deg);
+}
+
+.patrick {
+  position: absolute;
+  bottom: 52%;
+  right: 33%;
+  width: 250px;
+}
+
+.garry {
+  position: absolute;
+  bottom: 11%;
+  right: 35%;
+  width: 111px;
+  transform: rotateY(180deg);
+  animation: garry-mov 22s infinite;
+}
+
+.jump {
+  animation: jump 750ms ease-out;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes garry-mov {
+
+  from {
+    right: 35%
+  }
+
+  to {
+    right: -6%
+  }
+
+}
