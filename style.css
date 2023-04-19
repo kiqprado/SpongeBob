@@ -5,11 +5,8 @@
 }
 
 body {
-  background-image: url(/images/bikini-bottom.jpg);
+  background: url(/images/bikini-bottom.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .game-board {
